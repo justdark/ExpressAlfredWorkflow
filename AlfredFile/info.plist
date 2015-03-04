@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>alfred_kuaidichauxn_ds</string>
+	<key>connections</key>
+	<dict/>
+	<key>createdby</key>
+	<string>darkscope</string>
+	<key>description</key>
+	<string>快递查询，自动识别快递公司</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>快递查询</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>63</integer>
+				<key>keyword</key>
+				<string>kd</string>
+				<key>runningsubtext</key>
+				<string>正在查询，请稍候</string>
+				<key>script</key>
+				<string>if [[ -n "{query}" ]]; then
+  /usr/bin/python ./apriori.py {query}
+else
+  /usr/bin/python ./apriori.py
+fi</string>
+				<key>subtext</key>
+				<string>输入你的快递单号</string>
+				<key>title</key>
+				<string>快递查询</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>11B4EB27-4F60-4018-A6A3-31CA74E728AC</string>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>11B4EB27-4F60-4018-A6A3-31CA74E728AC</key>
+		<dict>
+			<key>ypos</key>
+			<real>140</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>https://github.com/justdark</string>
+</dict>
+</plist>
