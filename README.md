@@ -15,4 +15,4 @@
 
 #下载地址
 
-[点我下载]("https://raw.githubusercontent.com/justdark/ExpressAlfredWorkflow/master/express.alfredworkflow")
+[click]("https://raw.githubusercontent.com/justdark/ExpressAlfredWorkflow/master/express.alfredworkflow")
