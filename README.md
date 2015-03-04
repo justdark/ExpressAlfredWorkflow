@@ -1,0 +1,2 @@
+# ExpressAlfredWorkflow
+在Alfred中查询快递信息，不需要选择快递公司，使用kuaidi100的查询接口
