@@ -40,8 +40,11 @@ if (len(sys.argv)>1):
                 count = count + 1
         items.sort(key=lambda x: x['ftime'],reverse = True)
         for t in items:
-            item = t['location']+" "+ t['context'] 
-            result.add_item(item,subtitle=t['ftime'])
+            t.setdefault('location',"");
+            t.setdefault('context',"");
+            t.setdefault('ftime',"");
+            item = t['location']+" "+ t['context']
+            result.add_item(item,subtitle="  "+t['ftime'])
     
 
     if count==0:
