@@ -45,6 +45,9 @@ if (len(sys.argv)>1):
             t.setdefault('ftime',"");
             item = t['location']+" "+ t['context']
             result.add_item(item,subtitle="  "+t['ftime'])
+        if (count>0):
+            break;
+                    
     
 
     if count==0:
