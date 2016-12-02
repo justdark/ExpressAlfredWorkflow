@@ -5,16 +5,16 @@ import sys
 from feedback import *
 import datetime
 '''
-http://www.kuaidi100.com/autonumber/auto?num=880046513239379439
+https://www.kuaidi100.com/autonumber/auto?num=880046513239379439
 
-http://www.kuaidi100.com/query?type=yuantong&postid=880046513239379439&id=1&valicode=&temp=0.40347477863542736
+https://www.kuaidi100.com/query?type=yuantong&postid=880046513239379439&id=1&valicode=&temp=0.40347477863542736
 '''
 result =  Feedback();
 if (len(sys.argv)>1):
     query = "880046513239379439"
     query = sys.argv[1];
     
-    url = "http://www.kuaidi100.com/autonumber/auto?num="+query
+    url = "https://www.kuaidi100.com/autonumber/auto?num="+query
 
     conn = httplib.HTTPConnection("www.kuaidi100.com")
     conn.request(method="GET",url=url) 
@@ -25,7 +25,7 @@ if (len(sys.argv)>1):
     #print res
     count = 0
     for s in company:
-        url = "http://www.kuaidi100.com/query?type="+s['comCode']+"&postid="+query
+        url = "https://www.kuaidi100.com/query?type="+s['comCode']+"&postid="+query
         newcon = httplib.HTTPConnection("www.kuaidi100.com")
         newcon.request(method="GET",url = url)
         gets = newcon.getresponse().read()
